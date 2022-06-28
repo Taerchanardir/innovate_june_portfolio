@@ -130,24 +130,44 @@ import random
 
 # print(fave_songs) # prints whole list/object, including the ['s and commas between items
 
-fav_games=[
-  "Robotron",
-  "Elder Scrolls Online",
-  "Minecraft"
-]
+# fav_games=[
+#   "Robotron",
+#   "Elder Scrolls Online",
+#   "Minecraft"
+# ]
 
-# print(fav_games[0])
+# # # print(fav_games[0])
 
-#print(fav_games)
-# fav_games[1]="Skyrim"
-#print(fav_games)
-print(len(fav_games))
-fav_games.append("Coding addons") # add item to end
-print(fav_games)
-fav_games.pop() # pop and return the last item from list, as if list was a stack. an index position can be given
-print(fav_games)
-# fav_games.insert exists, .push() does not
+# # #print(fav_games)
+# # # fav_games[1]="Skyrim"
+# # #print(fav_games)
+# # print(len(fav_games))
+# # fav_games.append("Coding addons") # add item to end
+# # print(fav_games)
+# # fav_games.pop() # pop and return the last item from list, as if list was a stack. an index position can be given
+# # print(fav_games)
+# # # fav_games.insert exists, .push() does not
 
+# # for i in fav_games: # i iterates through all things in list, in this case strings. it is not the numeric index of the entry in the list
+# #   print(i)
+
+# # for i in range(10):    # 0 to 9
+# #   print(i)
+# # for i in range(4,10):  # 4 to 9
+# #   print(i)
+# # for i in range(3,10,2): # 3 to 9 in steps of 2
+# #   print(i)
+
+# for i in range(10,-1,-1):
+#   print(i)
+
+
+my_num=random.randint(0,40)
+random_numb=random.randint(0,40)
+while random_numb!=my_num:
+  print(f"{random_numb} does not match {my_num}")
+  random_numb=random.randint(0,40)
+print(f"{random_numb} does match {my_num}")
 
 
 
