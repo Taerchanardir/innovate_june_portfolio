@@ -81,3 +81,95 @@ import random
 #         break     # exit the loop
 
 
+
+# Dictonaries
+
+# not ordered, {} define variable as being a dictionary
+
+#a_list=["one","two","three"]
+
+#dictionary uses key:value pairs
+# key has to be hashable string or int
+#my_cat={
+#  "name":"Salem",  # name is key, Salem is value
+#  "colour":"Black"
+#}
+#
+#key must be unique
+
+
+my_imaginary_cat={
+  "name":"Spot",
+  "breed":"Fluffy",
+  "mood":"I want food!"
+}
+
+# # dictionaries do not have a numbered index. can't do
+# # print(my_imaginary_cat[1])   # key error
+
+# print(my_imaginary_cat["name"])
+
+# print(f'My imaginary cat {my_imaginary_cat["name"]} is a bit {my_imaginary_cat["mood"]} today')
+
+#change a value using a key:
+#my_imaginary_cat["mood"] = "sleepy"
+
+
+# print(my_imaginary_cat.keys())
+# = dict_keys(['name', 'breed', 'mood'])
+
+x=my_imaginary_cat.keys()
+
+my_imaginary_cat["age"]=2
+
+print(x)
+# x is a sort-of reference...but only to the 'keys' part, not the values in the dictionary....depends on how dictionaries work in the background
+# called a 'view object'
+
+v=my_imaginary_cat.values()
+print(v)
+
+ii=my_imaginary_cat.items() # gives (reference to) the key:value pairs
+print(ii)
+
+
+
+print(my_imaginary_cat.get("mood"))  # same as [] method
+
+
+print(my_imaginary_cat.get("legs"))
+print(my_imaginary_cat.get("legs","key 'legs' does not exist"))
+
+#print(my_imaginary_cat["legs"])
+
+print(list(my_imaginary_cat.keys()))
+
+for i in list(my_imaginary_cat.keys()):
+  print(i)
+
+for i in my_imaginary_cat.keys():
+  print(i)
+
+my_imaginary_cat.update({"legs":"4"}) # update, like append. add new key
+print(my_imaginary_cat)
+my_imaginary_cat.update({"name":"Rover"}) # change an existing key
+print(my_imaginary_cat)
+my_imaginary_cat.pop("mood")
+print(my_imaginary_cat)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
