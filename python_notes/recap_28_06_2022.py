@@ -170,20 +170,3 @@ while random_numb!=my_num:
 print(f"{random_numb} does match {my_num}")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
