@@ -43,3 +43,20 @@ p{
 #navbar a{
   color:darkred;
 }
+
+/* for all <a in all <nav */
+nav a{
+  color:dodgerblue;
+}
+
+/* where <nav is the direct parent of <a's */
+/* nav>a {} */
+
+/* applies to an <a but only when it is being hovered over*/
+/* a:hover {} */
+
+.content {
+  /* width:400px; */
+  /* width:40%;    40% of parent*/
+  /* width:40vw;  40% of the viewport (the browser client area) */
+}
