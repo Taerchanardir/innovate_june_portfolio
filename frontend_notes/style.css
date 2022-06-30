@@ -1,0 +1,45 @@
+body{
+  color:rgb(0, 0, 117);
+  background-color:azure;
+}
+
+h1, h2{
+  color:cadetblue;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  color:darkgreen;
+  font-size:2px;
+}
+
+p{
+  color: rgb(0, 226, 0);
+  font-size: 12px;
+}
+
+.centretext{
+  text-align: center;
+}
+
+/* for use with class="a_class_name" in a tag  */
+.aclassname{
+  color:aqua;
+}
+/* for use with id="an_id_name" in a tag */
+#anidname{
+  color:burlywood;
+}
+
+#maintitle{
+  color:brown;
+  text-decoration: underline;
+}
+
+/* for use only with <a> tags with an id="navbar_a" */
+#navbar a{
+  color:darkred;
+}
