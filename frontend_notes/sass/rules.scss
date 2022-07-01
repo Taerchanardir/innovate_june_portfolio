@@ -8,7 +8,7 @@ $headingFont: "Poiret One", cursive;
 $contentFont: "Josefin Sans", sans-serif;
 
 
-/* mixins!! */
+/* mixins! */
 @mixin heading($special){
   font-family: $headingFont;
   color: $special;
