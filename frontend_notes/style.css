@@ -1,3 +1,14 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rubik+Moonrocks&display=swap');
+
+@font-face{
+  font-family: Elephant;
+  src: url('The_Golden_Elephant.ttf');
+}
+
 body{
   color:rgb(0, 0, 117);
   background-color:azure;
@@ -17,12 +28,30 @@ h2{
 }
 
 p{
-  color: rgb(0, 226, 0);
-  font-size: 12px;
+  color: rgb(1, 0, 75);
+  font-size: 16px;
 }
 
 .centretext{
   text-align: center;
+}
+
+.testparagraph{
+  color:darkred;
+  font-family: 'Rubik Moonrocks';
+  font-size: 20px;
+}
+
+.testparagraph2{
+  color:rgb(85, 0, 138);
+  font-family: 'Oswald';
+  font-size: 30px;
+}
+
+.test3{
+  color:rgb(0, 128, 117);
+  font-family: 'Elephant';
+  font-size: 30px; 
 }
 
 /* for use with class="a_class_name" in a tag  */
@@ -55,8 +84,8 @@ nav a{
 /* applies to an <a but only when it is being hovered over*/
 /* a:hover {} */
 
-.content {
+/* .content { */
   /* width:400px; */
   /* width:40%;    40% of parent*/
   /* width:40vw;  40% of the viewport (the browser client area) */
-}
+/* } */

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh; /*100vh;*/
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /* flex-wrap: wrap; */
+    /* flex-flow: row wrap; */
+    /*align-items: flex-end;*/ /* nope, not at bottom. and now it is, what did I change?*/
+    /*align-items: baseline;*/ /* nope, not at bottom?*/
+    /*align-items: center;*/ /* this does work */
+}
+
+.box {
+    color: white;
+    font-size: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+ 
+}
+
+/* Colours for each box */
+/*
+.box1 { background: #eccc68; }
+.box2 { background: #ff6348; align-self: flex-end} // align-self works 
+.box3 { background: #ff7f50; flex-grow: 1;}
+.box4 { background: #ff4757; order:-1;}
+.box5 { background: #f1c40f; order: 2}
+.box6 { background: #e67e22; flex-grow: 2;}
+.box7 { background: #2ed573; order: 3;} // doesn't need the ';'
+.box8 { background: #1e90ff; }
+.box9 { background: #c56cf0; }
+.box10 { background: #18dcff; }
+*/
+
+.box1 { background: #eccc68; }
+.box2 { background: #ff6348; flex-shrink: 1;} /* seems to have no effect/behaves as if other boxes have a default flex-shrink :1 */
+.box3 { background: #ff7f50; flex-shrink: 5;}
+.box4 { background: #ff4757; flex-shrink: 2;}
+.box5 { background: #f1c40f; }
+.box6 { background: #e67e22; }
+.box7 { background: #2ed573; }
+.box8 { background: #1e90ff; }
+.box9 { background: #c56cf0; }
+.box10 { background: #18dcff; }
