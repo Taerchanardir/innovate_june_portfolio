@@ -1,0 +1,17 @@
+# inheritance
+Where one class is built upon another.
+The class built upon is called the base/parent/super class.
+The class built upon it is the /subclass/derived?/child class.
+Derived clases add extra attributes and methods to the base class.
+Avoids having to duplicate the base class in all the derived classes.
+Changes in the base class are inherited by all the derived classes, although derived classes can override/change/replace inherited attributes/methods. (in python?, can in C++)
+
+# encapsulation
+Attributes belonging to a class can be private (in C++ at least) and can't be directly read or set, (unless set to public, which is what I as a C programmer tends to do whilst building code)
+Prevents meddling with data belonging to a class, apart from through getter and setter methods.
+Helps seperate things out, so a coder working on one class does not have to fully understand how another class works and what data it holds.
+
+# polymorphisim
+Different child classes of a bse class can have different implementations of a method with the same name.
+
+Methods can have different implementations for the same method name, where they take different numbers or types of paramaters. The number and type of paramaters identify which version of a method gets called. This is usually called Overloading.
