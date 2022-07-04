@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(190, 221, 190);
+}
+
+@media (min-width: 500px){
+  body{
+    background-color: rgb(250, 191, 191);
+  }
+}
+
+@media (min-width: 700px){
+  body{
+    background-color: rgb(190, 190, 255);
+  }
+}
+
+/* put @rules under normal styles */
+
+/* this rule = any viewport size up to 500px width uses these settings,
+ otherwise it uses the defaults defined above*/
+
+/* a 'media query' */
+/*
+@media (max-width: 500px){
+  body{
+    color:blue;
+  }
+}
+*/
+
+
+.desktop, .mobile {
+  display: none;
+}
+
+
+
+
+/* orientation: portrait = if viewport is taller than it is wide */
+@media (orientation: portrait){
+  /* some properties */
+  .title {
+    color:yellow;
+    background-color:black;
+    text-align: center;
+    padding: 5%;
+  }
+  /* turn display back on again for this mode*/
+  .mobile{
+    display:inline-block;
+  }
+}
+
+/* and for if viewport is wider than it is tall */
+@media (orientation: landscape){
+  .subtitle {
+    color:green;
+    background-color: orange;
+    text-align:center;
+    padding:5%;
+  }
+
+  .desktop{
+    display:inline-block;
+  }
+}
+
+/* media queries cascade, later ones override earlier ones, and several can be true, so put them in an appropriate order */
+
+/* do mobile-first, build for mobile then @media tweak for desktop */
+
+/* css is opposite way round to if...elseif  else, in css the last correct clause takes precedence */
+
+
