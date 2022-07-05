@@ -1,0 +1,27 @@
+git add .
+git commit -m "a message"
+git push -u origin main
+ or just
+git push
+
+make a new python sandbox
+py -m venv <name_of_environment>
+
+ ... if get powershell complaning, which I didn't get
+Set-ExecutionPolicy Unrestricted
+
+pip install flask
+
+pip freeze > requirements.txt
+
+env\scripts\activate
+
+when include's don't work:
+open env/scripts, right click, 'copy relative path', nobrowser will probably open underneath the IDE...
+click bottom line 'python 3.10.5 etc etc'
+'enter interpreter path', paste the relative path
+
+this needs doing again if the green (env) disappears
+env\Scripts\activate
+
+

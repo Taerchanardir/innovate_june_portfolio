@@ -1,0 +1,3 @@
+html pages go in /templates
+images, javascript etc go in /static
+
