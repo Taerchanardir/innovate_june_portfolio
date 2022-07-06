@@ -1,0 +1,59 @@
+Random deleted comments, as I figured things out.
+
+index.html ---------------------
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./main.css".css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+<!-- 
+    Using this, when there is a script in index.html, but not in page1.html etc,
+     where there is a script call in index.html's <body> but not in page1.html, seems wrong and it getting very messy quickly
+    There probably is a correct way to do it, but after just 1 day on Flask, I don't know that way.
+{% extends 'base.html' %}
+{% block content %} -->
+
+<!-- Sticking this bit half way through the header looks untidy, is it the correct way? -->
+
+    <!-- <script src="./app.js"></script> -->
+
+<!-- This script only goes on this page, how do I include it on only this page but still do the changed path that base.html does?,  -->
+
+    <!-- <title>JavaScript Events</title> -->
+<!-- </head> -->
+<!-- <body onload="checkCookies()"> --> -->
+
+
+<!-- </body>
+</html> -->
+
+
+base.html -------------------
+
+<!-- solution to index.html having javascript ans page1.html not....do include the script src etc in the boilerplate, page1.thml etc just won't call any script functions...-->
+
+  <!-- <h1>Backend Project</h1> -->
+  <!-- having a half-header is obviously broken, it means all the other page1 etc will have to have a second half of a header -->
+
+
+
+<!-- I cannot see how this base.html can be extended into index.html, because index.html has <body onload="checkCookies()">
+  can I change my body tag to match?
+Yes, this works (although I can't test if checkCookies actually is working). The style started working too)
+The title has been changed to the title in base.html header, which is wrong for index.html
+
+None of the scripts are working, need to change a path somewhere...
+
+-->
+
+  <!-- <script src="./app.js"></script> -->
+
+  <!-- <script src="./app.js"></script> -->
+  <!-- This is returning the 404.html, which obviously doesn't work -->
+
+    <!-- <nav style="link: #fff;"> nope -->
+    <!-- color is not working here, even though it is appearing in the 'view source' for the page-->
