@@ -9,24 +9,31 @@
   <!-- This works! -->
   <title>Backend Project</title>
   <style>
+    nav {
+      text-align: center;
+    }
     a {color:white;}
     a:visited {color: rgb(168, 255, 168)}
     a:link {color: rgb(255, 179, 179)}
   </style>
-  <!-- Put style for links here, since we can't edit main.css
+  <!-- Put style for navbar here, since we can't edit main.css
+    otherwise the links appear in dark blue on blue and are hard to see
   This works! -->
 
 </head>
+  <!--
+  This head contains the src for the javascript, it just isn't used on any page except the main page
+  Using this simplistic one-header-for-everything doesn't allow different headers, so everything has to be common
+  I tried slicing the header and ending it early, so each page could have javascript or not, but that looked messy and wrong
+  The onload checkCookies does get included on all pages, in a real site it would probably be there on all pages.
+  I don't know what it does.
+  The only thing 'wrong' is the page title, for which the main/javascript page is different
+  -->
+
 <body onload="checkCookies()">
     
-
-<!-- <div style="color:aliceblue;">
-    some test text
-</div> -->
-<!-- color in this test div does work -->
-
+<!-- A navbar, appears on all pages -->
   <nav>
-
     <a = href="{{url_for('my_view.index')}}">Home</a>
     <a = href="{{url_for('my_view.page1')}}">Page 1</a>
     <a = href="{{url_for('my_view.page2')}}">Page 2</a>
@@ -36,6 +43,7 @@
 
   </nav>
 
+  <!-- Actual page content gets inserted here -->
   {% block content %}
   {% endblock %}
 </body>
