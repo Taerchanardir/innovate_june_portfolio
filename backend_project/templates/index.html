@@ -6,7 +6,7 @@
     <div>
     <h1>JavaScript Events</h1>
     <div class="flex-container-h">
-        <button>Dark Mode</button>
+        <button onClick="toggleDarkMode()">Dark Mode</button>
     </div>
     <h2>Innovate Coding</h2>
     <p id="intro-text">This is an interactive website for demonstrating a selection of events in JavaScript.</p>
@@ -40,6 +40,7 @@
     <p class="main-text">This is an event that occurs when the user moves their cursor over a specific element.</p>
     <div class="flex-container-h3">
         <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="colour-box example-text">
+            <!-- the 'this' tells js which element to do something to, rather than use getElementById() -->
         </div>
         <div onmouseover="mOver(this)" onmouseout="mOut(this)" class="colour-box example-text">
         </div>
