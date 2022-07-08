@@ -1,0 +1,60 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button1 {
+  background-color: #9ae2e2;
+  padding: 15px;
+  border: 2px solid rgb(140, 140, 255);
+}
+
+.button2 {
+  background-color: #78dd99;
+  padding: 15px;
+  border: 2px solid rgb(190, 140, 255);
+  transition-duration: 0.5s;
+}
+
+.button2:hover{
+  background-color: #0f7f17;
+  color: white;
+  border: 2px solid rgb(44, 44, 44);
+}
+
+
+.button3 {
+  background-color: #bfdd78;
+  padding: 15px;
+  border: 2px solid rgb(190, 140, 255);
+  transition-duration: 0.5s;
+  box-shadow: 4px 4px rgb(0,0, 255);
+}
+
+.button3:hover{
+  background-color: #787f0f;
+  color: white;
+  border: 2px solid rgb(44, 44, 44);
+  cursor: pointer;
+}
+
+.button3:active{
+  transform: translateY(2px);
+  box-shadow: 4px 2px rgb(100,100,255)
+
+}
+
+.button4{
+  background-color: red;
+  padding: 15px;
+  border: 2px solid black;
+  opacity: 0.5;
+  cursor:wait;
+  /* cursor: progress; */
+  /* : not-allowed; doesn't work for mousey */
+
+
+}

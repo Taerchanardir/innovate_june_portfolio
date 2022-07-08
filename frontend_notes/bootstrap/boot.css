@@ -1,0 +1,19 @@
+.my_nav{
+  background-color:blueviolet;
+}
+/* doesn't work, overridden by !important in preceding class in bootstrap*/
+
+/* this override does not work
+.bg_light{
+  background-color: rgb(76, 0, 255) !important;
+}
+*/
+
+/* this does work. an ID overrides a class, and has to be after the first !important */
+#navvy {
+  background-color: rgb(164, 125, 255) !important;
+}
+
+
+/* On saving in VSCode,  sometimes the open web page will flash once with the new,
+ but will then re-show the old, you have to do a shift-reload_page to make it actually load and show the new*/
