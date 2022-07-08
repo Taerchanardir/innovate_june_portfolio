@@ -5,7 +5,11 @@ git push -u origin main
 git push
 
 make a new python sandbox
-py -m venv <name_of_environment>
+py -m venv <name_of_environment, which should be 'env'>
+
+then this, to be using the virtual environmant. If you don't, then the flask install will go into into c:\users as a global install
+env\Scripts\activate
+
 
  ... if get powershell complaning, which I didn't get
 Set-ExecutionPolicy Unrestricted
@@ -14,7 +18,7 @@ pip install flask
 
 pip freeze > requirements.txt
 
-env\scripts\activate
+
 
 when include's don't work:
 open env/scripts, right click, 'copy relative path', nobrowser will probably open underneath the IDE...
