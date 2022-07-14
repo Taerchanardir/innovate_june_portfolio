@@ -10,6 +10,7 @@
 */
 
 /* this does work. an ID overrides a class, and has to be after the first !important */
+/* but every single element in your site has to have it's own override, because each ID can only be used once */
 #navvy {
   background-color: rgb(164, 125, 255) !important;
 }
