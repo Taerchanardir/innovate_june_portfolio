@@ -4,6 +4,12 @@ git push -u origin main
  or just
 git push
 
+heroku git:remote -a -<name of project/repository> ()
+heroku git:remote -a im-innovate-project-2022
+
+git push heroku main
+
+
 make a new python sandbox
 py -m venv <name_of_environment, which should be 'env'>
 
